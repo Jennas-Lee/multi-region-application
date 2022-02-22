@@ -9,9 +9,9 @@ export const databaseConfig: object = {
     logging: console.log
   },
   test: {
-    username: process.env.EXPRESS_DATABASE_DATABASE || 'postgres',
-    password: process.env.EXPRESS_DATABASE_USERNAME || 'postgres12345678',
-    database: process.env.EXPRESS_DATABASE_PASSWORD || 'postgres',
+    username: process.env.EXPRESS_DATABASE_USERNAME || 'postgres',
+    password: process.env.EXPRESS_DATABASE_PASSWORD || 'postgres12345678',
+    database: process.env.EXPRESS_DATABASE_DATABASE || 'test',
     host: process.env.EXPRESS_DATABASE_HOST || 'localhost',
     port: process.env.EXPRESS_DATABASE_PORT || 5432,
     dialect: 'postgres',

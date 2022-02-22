@@ -9,6 +9,6 @@ const userCrud = new UserCrud();
 router.get('/', userCrud.get);
 router.post('/', userCrud.post);
 router.put('/', userCrud.put);
-router.delete('/', userCrud.get);
+router.delete('/', userCrud.delete);
 
 export default router;

@@ -2,14 +2,14 @@ import { DataTypes, Model } from 'sequelize';
 
 import { sequelize } from './index';
 
-export const userFactory = () => {
-  class User extends Model {
-    name!: string
-    email!: string
-    birth!: string
-    password!: string
-  }
+export class User extends Model {
+  name!: string
+  email!: string
+  birth!: string
+  password!: string
+}
 
+export const userFactory = () => {
   User.init({
     name: {
       type: DataTypes.STRING(5),

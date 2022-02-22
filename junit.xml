@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuites name="jest tests" tests="29" failures="1" errors="0" time="17.866">
+  <testsuite name="Testing Healthcheck" errors="0" failures="1" skipped="0" timestamp="2022-02-22T06:46:28" time="3.154" tests="1">
+    <testcase classname="Testing Healthcheck GET /health" name="Testing Healthcheck GET /health" time="0.037">
+      <failure>Error: listen EADDRINUSE: address already in use :::3001
+    at Server.setupListenHandle [as _listen2] (node:net:1334:16)
+    at listenInCluster (node:net:1382:12)
+    at Server.listen (node:net:1469:7)
+    at Function.listen (C:\project\multi-region-application\node_modules\express\lib\application.js:618:24)
+    at Object.&lt;anonymous&gt; (C:\project\multi-region-application\src\app.ts:46:25)
+    at Runtime._execModule (C:\project\multi-region-application\node_modules\jest-runtime\build\index.js:1646:24)
+    at Runtime._loadModule (C:\project\multi-region-application\node_modules\jest-runtime\build\index.js:1185:12)
+    at Runtime.requireModule (C:\project\multi-region-application\node_modules\jest-runtime\build\index.js:1009:12)
+    at Runtime.requireModuleOrMock (C:\project\multi-region-application\node_modules\jest-runtime\build\index.js:1210:21)
+    at Object.&lt;anonymous&gt; (C:\project\multi-region-application\src\test\health.test.ts:2:1)</failure>
+    </testcase>
+  </testsuite>
+  <testsuite name="Testing User" errors="0" failures="0" skipped="0" timestamp="2022-02-22T06:46:28" time="16.846" tests="28">
+    <testcase classname="Testing User GET /user Without Email" name="Testing User GET /user Without Email" time="0.017">
+    </testcase>
+    <testcase classname="Testing User GET /user With Wrong Email" name="Testing User GET /user With Wrong Email" time="0.006">
+    </testcase>
+    <testcase classname="Testing User GET /user With Nonexistent User" name="Testing User GET /user With Nonexistent User" time="0.008">
+    </testcase>
+    <testcase classname="Testing User GET /user With Existent User" name="Testing User GET /user With Existent User" time="0.006">
+    </testcase>
+    <testcase classname="Testing User POST /user Without Email" name="Testing User POST /user Without Email" time="0.014">
+    </testcase>
+    <testcase classname="Testing User POST /user With Wrong Email" name="Testing User POST /user With Wrong Email" time="0.003">
+    </testcase>
+    <testcase classname="Testing User POST /user With Existent Email" name="Testing User POST /user With Existent Email" time="0.006">
+    </testcase>
+    <testcase classname="Testing User POST /user Without Name" name="Testing User POST /user Without Name" time="0.005">
+    </testcase>
+    <testcase classname="Testing User POST /user With Wrong Name" name="Testing User POST /user With Wrong Name" time="0.005">
+    </testcase>
+    <testcase classname="Testing User POST /user Without Password" name="Testing User POST /user Without Password" time="0.005">
+    </testcase>
+    <testcase classname="Testing User POST /user With Wrong Password" name="Testing User POST /user With Wrong Password" time="0.004">
+    </testcase>
+    <testcase classname="Testing User POST /user Without Birth" name="Testing User POST /user Without Birth" time="0.004">
+    </testcase>
+    <testcase classname="Testing User POST /user With Wrong Birth" name="Testing User POST /user With Wrong Birth" time="0.007">
+    </testcase>
+    <testcase classname="Testing User POST /user With Correct Information" name="Testing User POST /user With Correct Information" time="1.683">
+    </testcase>
+    <testcase classname="Testing User PUT /user Without Email" name="Testing User PUT /user Without Email" time="0.003">
+    </testcase>
+    <testcase classname="Testing User PUT /user With Wrong Email" name="Testing User PUT /user With Wrong Email" time="0.003">
+    </testcase>
+    <testcase classname="Testing User PUT /user Without Password" name="Testing User PUT /user Without Password" time="0.003">
+    </testcase>
+    <testcase classname="Testing User PUT /user With Wrong Password" name="Testing User PUT /user With Wrong Password" time="1.672">
+    </testcase>
+    <testcase classname="Testing User PUT /user With Correct Information Without Update" name="Testing User PUT /user With Correct Information Without Update" time="1.671">
+    </testcase>
+    <testcase classname="Testing User PUT /user With Wrong New Name" name="Testing User PUT /user With Wrong New Name" time="0.003">
+    </testcase>
+    <testcase classname="Testing User PUT /user With Wrong New Password" name="Testing User PUT /user With Wrong New Password" time="0.002">
+    </testcase>
+    <testcase classname="Testing User PUT /user With Wrong New Birth" name="Testing User PUT /user With Wrong New Birth" time="0.003">
+    </testcase>
+    <testcase classname="Testing User PUT /user With Correct Information" name="Testing User PUT /user With Correct Information" time="3.334">
+    </testcase>
+    <testcase classname="Testing User DELETE /user Without Email" name="Testing User DELETE /user Without Email" time="0.004">
+    </testcase>
+    <testcase classname="Testing User DELETE /user With Wrong Email" name="Testing User DELETE /user With Wrong Email" time="0.003">
+    </testcase>
+    <testcase classname="Testing User DELETE /user Without Password" name="Testing User DELETE /user Without Password" time="0.006">
+    </testcase>
+    <testcase classname="Testing User DELETE /user With Wrong Password" name="Testing User DELETE /user With Wrong Password" time="1.675">
+    </testcase>
+    <testcase classname="Testing User DELETE /user With Correct Information" name="Testing User DELETE /user With Correct Information" time="1.732">
+    </testcase>
+  </testsuite>
+</testsuites>

@@ -43,7 +43,7 @@ app.use((err: ErrorWithStatus, req: Request, res: Response, next: NextFunction) 
   next();
 });
 
-let server = app.listen(app.get('port'),  async () => {
+export let server = app.listen(app.get('port'),  async () => {
   logger.info(`Server is started at PORT ${app.get('port')}.`);
 
   await sequelize.authenticate()
